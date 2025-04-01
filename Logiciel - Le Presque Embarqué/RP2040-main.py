@@ -88,7 +88,7 @@ async def main():
     # asyncio.create_task(generate_clock(2000))
     while True:
         etats = await read_gpio()
-        print(time.time(), etats)
+        print(etats)
 
 if __name__ == "__main__":
     try:
